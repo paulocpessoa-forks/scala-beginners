@@ -1,5 +1,5 @@
 package lectures.part2oop
-
+import scala.language.postfixOps
 /**
   * Created by Daniel.
   */
@@ -15,7 +15,7 @@ object MethodNotations extends App {
     def apply(): String = s"Hi, my name is $name and I like $favoriteMovie"
     def apply(n: Int): String = s"$name watched $favoriteMovie $n times"
     def learns(thing: String) = s"$name is learning $thing"
-    def learnsScala = this learns "Scala"
+    def learnsScala: String = this learns "Scala"
   }
 
 
